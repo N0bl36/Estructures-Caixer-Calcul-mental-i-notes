@@ -6,6 +6,7 @@ suspendidos=0
 media=0
 maximo=0
 minimo=10
+
 while numeroRepeticiones < numeroNotas:
     nota= float(input("Introduce la nota: "))
     if nota < 0 or nota > 10:
@@ -21,10 +22,8 @@ while numeroRepeticiones < numeroNotas:
         if nota < minimo:
             minimo=nota
     media+=nota
-    
-    
-    time.sleep(0.5)
 
+time.sleep(0.5)
 print("-------------------------------")
 print("Número de aprobados:", aprobados)
 print("Número de suspendidos:", suspendidos)
